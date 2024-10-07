@@ -21,30 +21,219 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+:root {
+  --color-primary: rgb(20, 20, 27);
+  --color-secondary: rgb(211 210 220);
+  --color-hover-primary: #17b06e;
+}
+body,
+html {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--color-primary);
+  font-family: "Poppins", sans-serif;
+  color: var(--color-secondary);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  max-width: 1000px;
+  position: relative;
+  margin-right: auto;
+  row-gap: 2.5rem;
+  padding-bottom: 5rem;
+}
+
+/* --------------- */
+/* section */
+
+/* section */
+.container-hero-home {
+  padding-top: 5rem;
+  margin-top: 2.5rem;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.section {
+  width: 100%;
+}
+#contacto {
+  color: #3bcc88;
+}
+.container-hero img {
+  width: 75px;
+  height: auto;
+  border-radius: 100%;
+  mask-image: linear-gradient(black 70%, transparent);
+}
+.container-image-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.text-work-status {
+  border-radius: 1.5rem;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  background-color: #3d3c3c41;
+  border: 1px solid var(--color-hover-primary);
+}
+.container-info h1 {
+  font-size: 2.6rem;
+  margin: 0;
+  color: var(--color-secondary);
+}
+.container-networks {
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding-top: 1rem;
+}
+.networks {
+  background-color: #3d3c3c;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.45rem;
+  width: 26px;
+  height: 26px;
+}
+.network-icon {
+  fill: #d1d0d0;
+}
+.network-arrow {
+  fill: #8a8686;
+}
+.network-arrow {
+  display: none;
+}
+.network-icon-hover .network-icon {
+  display: none;
+}
+.network-icon-hover .network-arrow {
+  display: flex;
+}
+@keyframes rotate-svg {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+/* --------------- */
+/* Seccion proyectos */
+.container-projects {
+  width: 100%;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.card-project {
+  height: 240px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #3d3c3c54;
+}
+.card-info-project {
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+  z-index: 3;
+}
+.text-project-card p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.text-project-card small {
+  font-size: 0.85rem;
+}
+.tools-project {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.tools-project svg {
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-primary);
+  font-weight: 700;
+  border-radius: 100%;
+  fill: #3bcc88;
+  padding: 0.2rem;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.card-image::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  position: absolute;
+  background-color: #000000c5;
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------------------------------------- */
+/* About ME  */
+.container-about {
+  display: flex;
+  gap: 2rem;
+}
+.text-about {
+  width: 100%;
+}
+
+.ability-skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.ability-skill h4 {
+  width: 100%;
+}
+.skills {
+  gap: 1rem;
+  flex-wrap: wrap;
+  display: flex;
+}
+.skill {
+  padding: 0.6rem;
+  padding-bottom: 0.4rem;
+  padding-top: 0.4rem;
+  background-color: #504e4f;
+  border-radius: 0.15rem;
+}
+
 </style>

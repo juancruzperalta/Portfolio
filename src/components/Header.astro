@@ -1,0 +1,53 @@
+<header>
+  <nav class="hero-nav">
+    <ul class="hero-nav-ul">
+      <a href="index.html" class="hero-nav-li">Inicio</a>
+      <a href="#proyectos" class="hero-nav-li">Proyectos</a>
+      <a href="#sobreMi" class="hero-nav-li">Sobre mi</a>
+      <a href="#contacto" class="hero-nav-li">Contacto</a>
+    </ul>
+  </nav>
+</header>
+
+<style is:inline>
+header {
+  position: fixed;
+  top: 0;
+  width: 1000px;
+  z-index: 5;
+  padding: 0.1rem;
+  background-color: var(--color-primary);
+}
+.hero-nav-ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.hero-nav-li {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  position: relative;
+}
+.hero-nav-li::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1.6px;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+.hero-nav-li:hover {
+  color: var(--color-hover-primary);
+}
+.hero-nav-li:hover::after {
+  width: 100%;
+  left: 0;
+}
+</style>
