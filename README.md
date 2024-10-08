@@ -1,20 +1,26 @@
-### Portfolio Juan Cruz Peralta
+# Portfolio Juan Cruz Peralta
 
 ---
 
 ## Versión Beta v1.01
 
-# Versión 07-10-2024
+---
+
+### Versión 07-10-2024
 
 - Se implementó el uso de ASTRO
 - Se implementó el header de nuestra página web.
 - Se diseño e estiló nuevamente el diseño del header para visualizar
 
+### Versión 08-10-2024
+
+- Se implementó el inicio(home)
+- Se implementó funcionalidad en las networks(redes), al hacer hover aparece una flecha para redireccionar.
+
 ---
 
-## Upcomming...
+### Upcomming...
 
-- Implementar el inicio dónde se muestre una foto nuestra, un logo disponible o trabajando, y también información básica a su vez que nuestro nombre.
 - Debajo (ya que no tengo experiencia laboral) mostraré mis projectos para que sean lo más llamativo primero.
 - Después de los projectos irá sobre mi que es algo relativamente importante( no todos lo leerán como nuestros projectos )
 - Después el apartado de contacto.
