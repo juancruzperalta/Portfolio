@@ -2,10 +2,10 @@
         <div class="container-hero">
           <div class="container-info">
            <div class="container-image-info">
-              <img src="JuanPeralta.jpeg" alt="Juan Cruz Peralta" />
-              <span class="text-work-status">Disponible para trabajar</span>
+             <img src="JuanPeralta.jpeg" alt="Juan Cruz Peralta" />
+             <span class="text-work-status">Disponible para trabajar</span>
+             <h1>Juan Cruz Peralta</h1>
             </div>
-            <h1>Juan Cruz Peralta</h1>
             <p>Soy un desarrollador web apasionado por el mundo de las tecnologias y intentando inovar mis conocimientos día a día...Me encanta el front end!</p>
             <p>¿Creés que puedo ayudarte? <span>
               <a href="#contacto" id="contacto">
@@ -99,6 +99,13 @@
       </section>
 
 <style is:inline>
+  .container-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 .container-hero-home {
   padding-top: 5rem;
   margin-top: 2.5rem;
@@ -120,22 +127,27 @@
 .container-image-info {
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 .container-info p{
   font-size: 1.2rem;
+  margin:0;
+  margin-bottom: 0.5rem;
 }
 .text-work-status {
   border-radius: 1.5rem;
   padding: 0.4rem;
-  font-size: 1rem;
+  font-size: .85rem;
+  width: 150px;
   background-color: #3d3c3c41;
   border: 1px solid var(--color-hover-primary);
 }
 .container-info h1{
   font-size: 2.6rem;
-  color: var(--color-secondary)
+  color: var(--color-secondary);
+  margin: 0;
 }
 #contacto{
   color: #3bcc88

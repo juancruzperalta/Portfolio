@@ -1,0 +1,167 @@
+---
+import SvgCode from "../icons/svgCode.astro";
+import SvgJavascript from "../icons/svgJavascript.astro";
+import SvgTailwind from '../icons/svgTailwind.astro';
+import SvgInternet from '../icons/svgInternet.astro';
+---
+<section class="container-projects section">
+  <h2>Proyectos</h2>
+  <div class="projects">
+
+    <div class="card-project">
+      <article class="article-card">
+      <div class="card-image">
+        <img src="../../public/imagenDarkType.PNG" alt="DarkType">
+                  <div class="redirection-links">
+            <a href="github.com" target="_blank" rel="noopener nooreferrer"><SvgCode/>Código</a>
+            <a href="github.com" target="_blank" rel="noopener nooreferrer"><SvgInternet/> Preview</a>
+          </div>
+      </div>
+        <div class="card-text">
+          <p class="card-text-title">DarkType</p>
+          <p class="card-text-parraf">
+            Una página de prueba de velocidad de escritura.
+          </p>
+          <div class="card-tools">
+         <span class="tools"><SvgTailwind/>Tailwind CSS</span>
+          <span class="tools"><SvgJavascript/>Javascript</span>
+          </div>
+        </div>
+        
+      </article>
+  
+
+    </div>
+</div>
+</section>
+
+
+
+<style is:inline>
+  .section {
+  width: 100%;
+}
+.container-projects{
+  width: 100%;
+}
+.card-project{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.card-image{
+  width:100%;
+  height: 100%;
+}
+.card-image img{
+  width: 100%;
+  height: 100%;
+    border-radius: 1.5rem;
+}
+.article-card {
+  border:1px solid rgb(31, 41,55);
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-radius: 1.5rem;
+
+  transition: all 0.5s cubic-bezier(.4, 0, .2, 1);
+}
+.article-card::before{
+  content: ' ';
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  border-radius: 1.5rem;
+}
+.article-card:hover::before{
+  content: ' ';
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+ background: linear-gradient(135deg, rgba(72, 85, 99, 0.9), rgba(41, 50, 60, 0.7));
+  border-radius: 1.5rem;
+  transition: background 0.4s ease;
+}
+.redirection-links{
+  opacity:0;
+}
+.article-card:hover .card-text{
+  opacity: 0; 
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.article-card:hover .redirection-links {
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
+  opacity: 1;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+}
+.card-image a{
+  color:var(--color-secondary);
+  background-color: rgb(15, 15, 15);
+  padding:.35rem;
+  font-size: 1.1rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    fill:var(--color-secondary);
+    cursor:pointer;
+}
+.card-image svg{
+  width: 20px;
+  height: 20px;
+}
+
+.card-text{
+
+  bottom: 3rem;
+  position: absolute;
+  height: 30px;
+  border-radius: 0rem 0rem 1.5rem 1.5rem;
+  padding: 1rem;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.card-text-title{
+  margin-bottom:.3rem;
+}
+
+.card-text-parraf{
+  width: 80%;
+}
+.card-tools{
+  display: flex;
+  gap:.5rem;
+}
+.tools{
+  gap:.3rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  background-color: rgb(41, 45, 49);
+  fill: var(--color-secondary);
+  padding:.35rem;
+  font-size: .9rem;
+}
+.tools svg{
+  width: 16px;
+  height: 16px;
+}
+</style>

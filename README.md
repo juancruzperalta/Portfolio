@@ -2,10 +2,6 @@
 
 ---
 
-## Versión Beta v1.01
-
----
-
 ### Versión 07-10-2024
 
 - Se implementó el uso de ASTRO
@@ -17,14 +13,17 @@
 - Se implementó el inicio(home)
 - Se implementó funcionalidad en las networks(redes), al hacer hover aparece una flecha para redireccionar.
 
+### Versión 23-10-2024
+
+- Debajo (ya que no tengo experiencia laboral) mostraré mis projectos para que sean lo más llamativo primero.
+
+- hover en projecto, al pasar mouse por encima hace animación y se ponen los links adecuados.
+
 ---
 
 ### Upcomming...
 
-- Debajo (ya que no tengo experiencia laboral) mostraré mis projectos para que sean lo más llamativo primero.
-- Después de los projectos irá sobre mi que es algo relativamente importante( no todos lo leerán como nuestros projectos )
-- Después el apartado de contacto.
-- Se conectará todo con los links del header.
-- Dependiendo la cantidad de projectos lo haré en 2 divisiones o pondré 3 o 4 mejores projectos hechos por mi y los haré bien en grande así llama la atención.
-- Tengo pensado hacer un diseño que sea bonito al pasar el mouse por arriba de la imágen del projecto.
-- Sería un projecto y al costado el texto.
+- Proyecto, mejorar e implementar más proyectos.
+- Sobre mi.
+- Contacto
+- Refaccionar e hacer para dispositivos móviles.
