@@ -1,0 +1,54 @@
+<section class="container-about section">
+  <div class="aboutMe">
+    <article class="article-aboutMe">
+      <h2>Sobre mi</h2>
+      <p>¡Hola!, permiteme presentarme soy Juan Cruz Peralta un desarrollador web, apasionado y comenzando en este mundo maravilloso de la programación.</p>
+      <p>Tengo 21 años y todavía sigo en pleno aprendizaje para mejorar dia a día. Todavía no he conseguido mi primer trabajo pero aún así sigo prácticando para poder adquirir nuevos conocimientos y crear mis projectos personales.</p>
+    </article>
+    <article class="article-skills">
+      <h2>My Skills</h2>
+      <div class="div-skill">
+
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Desing UI/UX</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">React JS</div>
+        <div class="skill">TailwindCSS</div>
+        <div class="skill">Astro</div>
+        <div class="skill">SQL</div>
+
+      </div>
+
+    </div>
+    </article>
+
+</section>
+
+
+<style is:inline>
+  .article-aboutMe h2{
+    color: var(--color-title);
+  }
+  .article-aboutMe p{
+    font-size: 1.1rem;
+  }
+  .aboutMe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1.2rem;
+    margin-top:2rem;
+  }
+  .div-skill{
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.8rem;
+  }
+  .skill{
+    padding:.8rem;
+    border-radius: .35rem;
+  background-color: var(--color-secondary-bg);
+  }
+
+</style>
