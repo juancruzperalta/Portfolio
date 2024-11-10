@@ -19,11 +19,15 @@
 
 - hover en projecto, al pasar mouse por encima hace animación y se ponen los links adecuados.
 
+### Versión 10-11-2024
+
+- Se estilizó e hizo responsive desing en home.
+- Se estiló colores e resaltados.
+- Se estiló los tamaños.
+
 ---
 
 ### Upcomming...
 
-- Proyecto, mejorar e implementar más proyectos.
-- Sobre mi.
-- Contacto
-- Refaccionar e hacer para dispositivos móviles.
+- Hacer responsive design en las próximas páginas...
+- Probar nuevamente el home.
