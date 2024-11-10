@@ -2,8 +2,9 @@
   <div class="aboutMe">
     <article class="article-aboutMe">
       <h2>Sobre mi</h2>
-      <p>¡Hola!, permiteme presentarme soy Juan Cruz Peralta un desarrollador web, apasionado y comenzando en este mundo maravilloso de la programación.</p>
-      <p>Tengo 21 años y todavía sigo en pleno aprendizaje para mejorar dia a día. Todavía no he conseguido mi primer trabajo pero aún así sigo prácticando para poder adquirir nuevos conocimientos y crear mis projectos personales.</p>
+<p>¡Hola! Soy <span class="color-resalt">Juan Cruz Peralta, desarrollador web</span> en los inicios de mi carrera, apasionado por el mundo de la programación y con gran entusiasmo por aprender y crecer en este campo.</p>
+<p>Tengo 21 años y me encuentro en constante aprendizaje, <span class="color-resalt">esforzándome cada día por mejorar mis habilidades y conocimientos.</span> Aunque aún no tengo una experiencia laboral consolidada, estoy comprometido a desarrollar una sólida trayectoria profesional.</p>
+<p>Mi meta es convertirme en un <span class="color-resalt">excelente desarrollador</span> y contribuir de manera significativa en el ámbito tecnológico.</p>
     </article>
     <article class="article-skills">
       <h2>My Skills</h2>
@@ -28,6 +29,9 @@
 
 
 <style is:inline>
+  .color-resalt{
+    color: var(--color-resalt);
+  }
   .article-aboutMe h2{
     color: var(--color-title);
   }
@@ -36,7 +40,7 @@
   }
   .aboutMe{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr;
     gap:1.2rem;
     margin-top:2rem;
   }
